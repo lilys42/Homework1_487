@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd2f9bb7-d619-4ea7-a6ec-5cbda1be2b99" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework1_487.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DatabaseConnection.java" afterDir="false" />
+    <list default="true" id="cd2f9bb7-d619-4ea7-a6ec-5cbda1be2b99" name="Changes" comment="Class to initialize database (if it doesn't exist already) and take an id from the user. It adds the id to the database, along with the date and timestamp.">
+      <change afterPath="$PROJECT_DIR$/src/SelectMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ViewAccesses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EnterID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +25,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/consoles/db/847a3e63-f7c3-4778-b46d-b8b704b3405d/console.sql" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/DatabaseConnection.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Database.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -71,8 +68,16 @@
       <option name="presentableId" value="Default" />
       <updated>1661533269596</updated>
       <workItem from="1661533271440" duration="3176000" />
-      <workItem from="1661541448663" duration="11109000" />
+      <workItem from="1661541448663" duration="13664000" />
     </task>
+    <task id="LOCAL-00001" summary="Class to initialize database (if it doesn't exist already) and take an id from the user. It adds the id to the database, along with the date and timestamp.">
+      <created>1661659738861</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661659738861</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,6 +93,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Class to initialize database (if it doesn't exist already) and take an id from the user. It adds the id to the database, along with the date and timestamp." />
+    <option name="LAST_COMMIT_MESSAGE" value="Class to initialize database (if it doesn't exist already) and take an id from the user. It adds the id to the database, along with the date and timestamp." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

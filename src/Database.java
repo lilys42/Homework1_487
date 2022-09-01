@@ -2,31 +2,28 @@ import java.sql.*;
 import java.util.Calendar;
 import java.util.Scanner;
 
-public class EnterID {
+public class Database {
     static final String DB_URL="jdbc:mysql://localhost:3306";
     static final String USER = "root";
     static final String PASS = "Summer321#";
 
-    public static void main(String[] args){
+    public static void enterId(){
         //Initialize the database and the access_times table, if the database does not already exist
         initializeDB();
         Scanner input=new Scanner(System.in);
         String selection="S";
         do{
-            System.out.println("Click any key to enter an id, or Q to quit:");
-
+            System.out.println("Enter id, or Q to quit:");
             selection=input.next();
-            if(!selection.equalsIgnoreCase("Q")){
-                 //Get student id
-                 System.out.println("Enter student id:");
-                 long student_id=input.nextLong();
+            if(selection.equals("Q"))
+                break;
+            long student_id=Long.parseLong(selection);
 
-                 //Add an entry to the database table
-                 Calendar calendar = Calendar.getInstance();
-                 Timestamp timestamp=new Timestamp(calendar.getTimeInMillis());
-                 Date date=new Date(calendar.getTimeInMillis());
-                 insert(student_id,timestamp.toString(),date.toString());
-            }
+            //Add an entry to the database table
+            Calendar calendar = Calendar.getInstance();
+            Timestamp timestamp=new Timestamp(calendar.getTimeInMillis());
+            Date date=new Date(calendar.getTimeInMillis());
+            insert(student_id,timestamp.toString(),date.toString());
         } while(!selection.equalsIgnoreCase("Q"));
     }
     public static void initializeDB() {
