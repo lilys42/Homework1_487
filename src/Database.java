@@ -9,7 +9,7 @@ public class Database {
 
     public static void enterId(){
         //Initialize the database and the access_times table, if the database does not already exist
-        initializeDB();
+      //  initializeDB();
         Scanner input=new Scanner(System.in);
         String selection="S";
         do{

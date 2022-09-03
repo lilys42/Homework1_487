@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd2f9bb7-d619-4ea7-a6ec-5cbda1be2b99" name="Changes" comment="Class to initialize database (if it doesn't exist already) and take an id from the user. It adds the id to the database, along with the date and timestamp.">
-      <change afterPath="$PROJECT_DIR$/src/SelectMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ViewAccesses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="cd2f9bb7-d619-4ea7-a6ec-5cbda1be2b99" name="Changes" comment="Created a main method that can start command line or GUI">
+      <change afterPath="$PROJECT_DIR$/src/GUIMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ResultsWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EnterID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SelectMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SelectMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ViewAccesses.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +25,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/consoles/db/847a3e63-f7c3-4778-b46d-b8b704b3405d/console.sql" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Database.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -36,29 +36,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "true",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/sicam/Downloads/mysql-8.0.30-winx64",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lily/Desktop/IdeaProjects/Homework1_487&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lily\Desktop\IdeaProjects\Homework1_487\src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -68,7 +73,12 @@
       <option name="presentableId" value="Default" />
       <updated>1661533269596</updated>
       <workItem from="1661533271440" duration="3176000" />
-      <workItem from="1661541448663" duration="13664000" />
+      <workItem from="1661541448663" duration="14593000" />
+      <workItem from="1662042745767" duration="34000" />
+      <workItem from="1662043203138" duration="903000" />
+      <workItem from="1662047061786" duration="13000" />
+      <workItem from="1662164645016" duration="2984000" />
+      <workItem from="1662220440091" duration="907000" />
     </task>
     <task id="LOCAL-00001" summary="Class to initialize database (if it doesn't exist already) and take an id from the user. It adds the id to the database, along with the date and timestamp.">
       <created>1661659738861</created>
@@ -77,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661659738861</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created a main method that can start command line or GUI">
+      <created>1661995624832</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1661995624832</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,7 +113,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Class to initialize database (if it doesn't exist already) and take an id from the user. It adds the id to the database, along with the date and timestamp." />
-    <option name="LAST_COMMIT_MESSAGE" value="Class to initialize database (if it doesn't exist already) and take an id from the user. It adds the id to the database, along with the date and timestamp." />
+    <MESSAGE value="Created a main method that can start command line or GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created a main method that can start command line or GUI" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
