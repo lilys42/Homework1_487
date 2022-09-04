@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd2f9bb7-d619-4ea7-a6ec-5cbda1be2b99" name="Changes" comment="Working search and filter">
-      <change afterPath="$PROJECT_DIR$/src/LoginWindow.java" afterDir="false" />
+    <list default="true" id="cd2f9bb7-d619-4ea7-a6ec-5cbda1be2b99" name="Changes" comment="Working Version">
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/insertMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUIMode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ResultsWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResultsWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SelectMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SelectMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/insertMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InsertMode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +25,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/insertMode.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/InsertMode.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -79,7 +78,7 @@
       <workItem from="1662043203138" duration="903000" />
       <workItem from="1662047061786" duration="13000" />
       <workItem from="1662164645016" duration="2984000" />
-      <workItem from="1662220440091" duration="21474000" />
+      <workItem from="1662220440091" duration="22151000" />
     </task>
     <task id="LOCAL-00001" summary="Class to initialize database (if it doesn't exist already) and take an id from the user. It adds the id to the database, along with the date and timestamp.">
       <created>1661659738861</created>
@@ -109,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662244527782</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Working Version">
+      <created>1662250760896</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662250760896</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,7 +137,8 @@
     <MESSAGE value="Created a main method that can start command line or GUI" />
     <MESSAGE value="Basic table showing results of a query." />
     <MESSAGE value="Working search and filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working search and filter" />
+    <MESSAGE value="Working Version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working Version" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

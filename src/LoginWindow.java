@@ -1,3 +1,6 @@
+/*
+    LoginWindow asks for a username and password, then passes them to the ResultsWindow constructor.
+ */
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;

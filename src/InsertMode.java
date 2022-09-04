@@ -1,13 +1,16 @@
+/*
+    insertMode allows the user to enter id's into the database.
+ */
 import java.sql.*;
 import java.util.Calendar;
 import java.util.Scanner;
 
-public class insertMode {
+public class InsertMode {
     static final String DB_URL="jdbc:mysql://localhost:3306";
      String username;
      String password;
 
-    public insertMode(String username, String password){
+    public InsertMode(String username, String password){
         this.username=username;
         this.password=password;
 

@@ -1,3 +1,7 @@
+/*
+    ResultsWindow connects to the database and allows the user to view, filter and sort the entries.
+ */
+
 import com.mysql.cj.xdevapi.Table;
 
 import javax.swing.*;
@@ -93,12 +97,13 @@ public class ResultsWindow extends JFrame{
         columnNames.add("Timestamp");
         resultsTable = new JTable(new DefaultTableModel(columnNames,0));
 
-        //Fill table with the whole database, and add it to the frame
+        //Fill table with contents of the database, and add it to the frame
         fillTable(resultsTable,"Select * from access_times",username,password);
         scrollPane=new JScrollPane(resultsTable);
         add(scrollPane,BorderLayout.SOUTH);
         resultsTable.setAutoCreateRowSorter(true);
 
+        //If connection was not successful, display a message dialog and then close the frame.
         if(!connected)
             dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
         //Add the search panel to the frame

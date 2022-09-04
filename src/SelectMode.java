@@ -1,3 +1,7 @@
+/*
+SelectMode has the main method. It connects to the database and initializes it if it hasn't already been created, and allows
+the user to choose whether to start the command line program to insert id's or start the GUI.
+ */
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.sql.Connection;
@@ -13,6 +17,7 @@ public class SelectMode {
     public static void main(String[] args){
         getLoginCredentials();
 
+        //Connect to the database and create it. If it has already been created, nothing happens.
         try {
             Connection conn = DriverManager.getConnection(DB_URL, username, password);
             Statement stmt = conn.createStatement();
@@ -31,10 +36,13 @@ public class SelectMode {
         String selection=input.next();
 
         if(selection.equals("I"))
-            new insertMode(username,password);
+            new InsertMode(username,password);
         else if(selection.equals("G"))
             new LoginWindow();
     }
+    /*
+        Reads the user id and password from a text file.
+     */
     public static void getLoginCredentials(){
         try{
             File loginFile=new File("C:\\Users\\Lily\\Desktop\\Login.txt");
