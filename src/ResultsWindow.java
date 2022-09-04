@@ -8,6 +8,7 @@ import javax.swing.table.TableRowSorter;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
 import java.sql.*;
 import java.util.EventListener;
 import java.util.Vector;
@@ -24,6 +25,7 @@ public class ResultsWindow extends JFrame{
     JTextField dateField;
     String username;
     String password;
+    boolean connected;
 
     public ResultsWindow(String username, String password){
         this.username=username;
@@ -33,10 +35,6 @@ public class ResultsWindow extends JFrame{
         setTitle(username);
         setSize(WINDOW_WIDTH,WINDOW_HEIGHT);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setVisible(true);
-
-        //Make sure database is initialized (in case GUI is opened before the command line program)
-        Database.initializeDB();
 
         //Create panel with search fields and buttons
         JPanel searchPanel=new JPanel();
@@ -89,9 +87,6 @@ public class ResultsWindow extends JFrame{
             }
         });
 
-        //Add the search panel to the frame
-        add(searchPanel,BorderLayout.NORTH);
-
         //Create table
         Vector<String> columnNames=new Vector();
         columnNames.add("Id");
@@ -102,17 +97,25 @@ public class ResultsWindow extends JFrame{
         fillTable(resultsTable,"Select * from access_times",username,password);
         scrollPane=new JScrollPane(resultsTable);
         add(scrollPane,BorderLayout.SOUTH);
+        resultsTable.setAutoCreateRowSorter(true);
 
+        if(!connected)
+            dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
+        //Add the search panel to the frame
+        add(searchPanel,BorderLayout.NORTH);
         pack();
+        setVisible(true);
     }
     public ResultSet executeQuery(String query,String username, String password) {
         ResultSet resultSet=null;
+        connected=false;
         try {
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/accesses", username, password);
             Statement stmt = conn.createStatement();
             resultSet = stmt.executeQuery(query);
+            connected=true;
         } catch (SQLException e) {
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(this,"Unable To Access Database");
         }
         return resultSet;
     }
@@ -125,11 +128,9 @@ public class ResultsWindow extends JFrame{
                 System.out.println(resultSet.getString(1));
                 model.addRow(new Object[]{resultSet.getString(1),resultSet.getString(2)});
             }
-        }catch(SQLException e){
-
+        }catch(Exception e){
         }
         table.revalidate();
-      //  return table;
     }
     public void searchButtonAction(){
         StringBuilder query=new StringBuilder();
