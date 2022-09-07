@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd2f9bb7-d619-4ea7-a6ec-5cbda1be2b99" name="Changes" comment="Working Version">
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="cd2f9bb7-d619-4ea7-a6ec-5cbda1be2b99" name="Changes" comment="Added some comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LoginWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ResultsWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResultsWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SelectMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SelectMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/insertMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InsertMode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +73,9 @@
       <workItem from="1662043203138" duration="903000" />
       <workItem from="1662047061786" duration="13000" />
       <workItem from="1662164645016" duration="2984000" />
-      <workItem from="1662220440091" duration="22151000" />
+      <workItem from="1662220440091" duration="22304000" />
+      <workItem from="1662326784642" duration="42000" />
+      <workItem from="1662509965853" duration="2768000" />
     </task>
     <task id="LOCAL-00001" summary="Class to initialize database (if it doesn't exist already) and take an id from the user. It adds the id to the database, along with the date and timestamp.">
       <created>1661659738861</created>
@@ -115,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662250760896</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added some comments">
+      <created>1662251441315</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662251441315</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +142,8 @@
     <MESSAGE value="Basic table showing results of a query." />
     <MESSAGE value="Working search and filter" />
     <MESSAGE value="Working Version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working Version" />
+    <MESSAGE value="Added some comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some comments" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
