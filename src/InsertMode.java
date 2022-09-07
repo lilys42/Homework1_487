@@ -21,16 +21,16 @@ public class InsertMode {
             selection=input.next();
             if(selection.equals("Q"))
                 break;
-            long student_id=Long.parseLong(selection);
+            String student_id=selection;
 
             //Add an entry to the database table
             Calendar calendar = Calendar.getInstance();
             Timestamp timestamp=new Timestamp(calendar.getTimeInMillis());
             Date date=new Date(calendar.getTimeInMillis());
-            insert(student_id,timestamp.toString(),date.toString());
+            insert(extractId(student_id),timestamp.toString(),date.toString());
         } while(!selection.equalsIgnoreCase("Q"));
     }
-    public void insert(Long student_id, String timestamp, String access_date){
+    public void insert(String student_id, String timestamp, String access_date){
         try{
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/accesses", username, password);
             Statement stmt= conn.createStatement();
@@ -39,5 +39,13 @@ public class InsertMode {
         }catch(SQLException e){
             e.printStackTrace();
         }
+    }
+    public String extractId(String id){
+        for(int i=0;i<id.length()-2;i++){
+            if(id.charAt(i)=='%'&&id.charAt(i+1)=='A'){
+                return id.substring(i+2,i+11);
+            }
+        }
+        return id;
     }
 }
